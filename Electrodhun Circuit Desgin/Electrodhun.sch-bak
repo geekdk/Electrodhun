@@ -1,0 +1,173 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:SD_Card J?
+U 1 1 5FA41EB6
+P 4850 6050
+F 0 "J?" H 4850 6715 50  0000 C CNN
+F 1 "SD_Card" H 4850 6624 50  0000 C CNN
+F 2 "" H 4850 6050 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf" H 4850 6050 50  0001 C CNN
+	1    4850 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 5FA44CB1
+P 6450 3650
+F 0 "J?" H 6270 3633 50  0000 R CNN
+F 1 "AudioJack2" H 6270 3724 50  0000 R CNN
+F 2 "" H 6450 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5FA468BF
+P 6400 4100
+F 0 "J?" H 6508 4281 50  0000 C CNN
+F 1 "Piezo Sensor Headers" H 6508 4190 50  0000 C CNN
+F 2 "" H 6400 4100 50  0001 C CNN
+F 3 "~" H 6400 4100 50  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5FA4CA55
+P 6100 5000
+F 0 "#PWR?" H 6100 4750 50  0001 C CNN
+F 1 "GNDREF" H 6105 4827 50  0000 C CNN
+F 2 "" H 6100 5000 50  0001 C CNN
+F 3 "" H 6100 5000 50  0001 C CNN
+	1    6100 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4800 6100 5000
+Wire Wire Line
+	4700 4900 4350 4900
+Wire Wire Line
+	4350 4900 4350 5350
+Wire Wire Line
+	5500 5350 5500 4800
+Connection ~ 5500 4800
+Wire Wire Line
+	5500 4800 6100 4800
+Wire Wire Line
+	6400 4200 6100 4200
+Wire Wire Line
+	6100 4200 6100 4800
+Connection ~ 6100 4800
+Wire Wire Line
+	6250 3750 6100 3750
+Wire Wire Line
+	6100 3750 6100 4200
+Connection ~ 6100 4200
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 5FA4368E
+P 4850 3700
+F 0 "A?" H 4850 4881 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 4850 4790 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 4850 3700 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4850 4250 4850
+Wire Wire Line
+	4250 4850 4250 4400
+Wire Wire Line
+	4250 4400 4350 4400
+Wire Wire Line
+	4800 5150 4750 5150
+Wire Wire Line
+	4800 4850 4800 5150
+Wire Wire Line
+	4700 5150 4650 5150
+Wire Wire Line
+	4700 4900 4700 5150
+Wire Wire Line
+	4850 5150 4850 5050
+Wire Wire Line
+	4850 5050 6000 5050
+Wire Wire Line
+	6000 5050 6000 5650
+$Comp
+L power:+5V #PWR?
+U 1 1 5FA522EB
+P 6000 5700
+F 0 "#PWR?" H 6000 5550 50  0001 C CNN
+F 1 "+5V" H 6015 5873 50  0000 C CNN
+F 2 "" H 6000 5700 50  0001 C CNN
+F 3 "" H 6000 5700 50  0001 C CNN
+	1    6000 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 4800 5500 4800
+Wire Wire Line
+	4350 5350 5500 5350
+Wire Wire Line
+	4950 5150 4950 4800
+Connection ~ 4950 4800
+Wire Wire Line
+	4550 5150 4550 5000
+Wire Wire Line
+	4550 5000 4100 5000
+Wire Wire Line
+	4100 5000 4100 4300
+Wire Wire Line
+	4100 4300 4350 4300
+Wire Wire Line
+	4450 5150 4000 5150
+Wire Wire Line
+	4000 5150 4000 4200
+Wire Wire Line
+	4000 4200 4350 4200
+Wire Wire Line
+	5150 5150 5150 4950
+Wire Wire Line
+	5150 4950 3850 4950
+Wire Wire Line
+	3850 4950 3850 4100
+Wire Wire Line
+	3850 4100 4350 4100
+Wire Wire Line
+	6400 4100 5450 4100
+Wire Wire Line
+	5450 4100 5450 3700
+Wire Wire Line
+	5450 3700 5350 3700
+Wire Wire Line
+	6250 3650 4650 3650
+Wire Wire Line
+	4650 3650 4650 4000
+Wire Wire Line
+	4650 4000 4350 4000
+Wire Wire Line
+	5050 2700 7250 2700
+Wire Wire Line
+	7250 2700 7250 5650
+Wire Wire Line
+	7250 5650 6000 5650
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6000 5700
+$EndSCHEMATC
